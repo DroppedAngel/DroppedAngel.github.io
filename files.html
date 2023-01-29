@@ -1,47 +1,41 @@
-<!--
-http://108.67.245.54:8096/emby/items/( ID )/download?api_key=(         WEB - API Key        )&mediaSourceId=(Multiversion Source ID)
-                                     458795                  c37b68623eb24acfa086d9b2242366e1               361f0904ec351ed73061f6f874cdf3d3 M3GAN (2160p HDR10)
-                                     458795                  c37b68623eb24acfa086d9b2242366e1               5f912beab4075595e10512be020ec13b M3GAN (1080p)
-M3GAN.2022.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
--->
-
 <!DOCTYPE html>
 <html lang="en">
-<head> <!-- Info about the file -->
-    <meta charset="UTF-8"> <!--  -->
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Projects</title>
+    <title>Dropped Files</title>
+    <style>
+        .video {
+            display: flex;
+            justify-content: center;
+            border: 1px  dashed lightblue;
+            text-align: center;
+        }
+        .download-button {      
+            padding-inline: 5px;
+        }
+        .center-page {
+            padding: auto;
+            text-align: center;
+        }
+    </style>
 </head>
-<body> <!-- Content -->
-    <div class="grid-2">
-        <div class="section-1">
-            <i class="fas fa-code fa-5x fa-user-circle"></i>
-            <h2>Angel Chavez</h2>
-            <p>Stuff and things</p>
-            <p>Links & Files</p>
-            <a href="https://instagram.com/dropped_angel390"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/droppedangel"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="section-2">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas sint et nihil iusto eius nostrum sit error, repellat optio quisquam! Magnam dolore iusto cumque. Nostrum error iste neque maiores.</p>
-            <h2>Experience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem.</p>
-
-            <h2>Skills</h2>
-            <p>None</p>
-            <p>Basic html</p>
-            <h2>Projects</h2>
-            <a href="./project-1">Project 1 - Student ID</a>
-            <a href="./files">Files</a>
-            <a href="#">Project 3</a>
-            <a href="#">Project 4</a>
-            <a href="#">Project 5</a>
-            <h2>Contact</h2>
-            <a href="https://instagram.com/dropped_angel390">Instagram</a>
+<body>
+    <div class="center-page">
+        <h2>About</h2>
+        <p>Little Progress</p>
+        <br>
+        <button class="download-button" type="button"><a href="http://108.67.245.54:8096/emby/items/458795/download?api_key=c37b68623eb24acfa086d9b2242366e1&mediaSourceId=5f912beab4075595e10512be020ec13b">(1080p HEVC)</a></button><p>~1.3GB</p>
+        <button class="download-button" type="button"><a href="http://108.67.245.54:8096/emby/items/458795/download?api_key=c37b68623eb24acfa086d9b2242366e1&mediaSourceId=361f0904ec351ed73061f6f874cdf3d3">(2160p HDR10 HEVC)</a></button><p>~2.4GB</p>
+        <br>
+        <h2>Video</h2>
+        <div>
+            <video class="video" width="960" height="402" controls autoplay muted>
+                <source src="http://108.67.245.54:8096/emby/videos/458795/stream.mkv?MediaSourceId=5f912beab4075595e10512be020ec13b&Static=true&api_key=10fa78b7ad3447d9803f2bccec00e2e0">
+            </video>
         </div>
     </div>
 </body>
